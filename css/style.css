@@ -365,3 +365,45 @@ textarea.contact-input {
     /* This filter creates the dark, holographic map effect */
     filter: grayscale(100%) invert(90%) contrast(80%);
 }
+
+/* ========================================= */
+/* ===   RESPONSIVE NAVIGATION STYLES    === */
+/* ========================================= */
+
+/* Base style for the mobile menu panel */
+.mobile-nav-menu {
+    position: fixed;
+    /* Start off-screen to the right */
+    transform: translateX(100%);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* The "Holographic Glass" effect */
+    background-color: rgba(15, 5, 37, 0.85); /* var(--brand-dark) with alpha */
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+    z-index: 40; /* Below the header items but above the main content */
+}
+
+/* When the menu is open, bring it into view */
+.mobile-nav-menu.menu-open {
+    transform: translateX(0);
+}
+
+/* On medium screens and up, revert to the desktop layout */
+@media (min-width: 768px) { /* Corresponds to Tailwind's 'md' breakpoint */
+    .mobile-nav-menu {
+        position: static;
+        transform: translateX(0);
+        background-color: transparent;
+        backdrop-filter: none;
+        width: auto;
+        height: auto;
+        display: block;
+        z-index: auto;
+    }
+}
