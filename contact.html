@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Katelman Steel Fabrication Inc.</title>
+    <meta name="description" content="Get in touch with Katelman Steel Fabrication. Find our address and contact details, or send us a message directly.">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-brand-dark text-gray-300 font-sans">
+
+    <div class="hero-grid-bg"></div>
+
+    <header class="fixed top-0 left-0 w-full z-50 p-6 md:p-8 flex justify-between items-center">
+        <a href="index.html" class="logo text-xl font-bold tracking-wider uppercase flex items-center gap-3">
+            <i class="fa-solid fa-drafting-compass"></i>
+            <span>Katelman Steel</span>
+        </a>
+        <nav>
+            <ul class="flex gap-6 md:gap-8 text-sm uppercase tracking-wider">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="relative z-10">
+        <section class="min-h-screen grid grid-cols-1 lg:grid-cols-2">
+            <div class="flex items-center justify-center p-8 pt-32 lg:pt-8">
+                <div class="w-full max-w-md wow animate__animated animate__fadeInLeft">
+                    <h1 class="text-5xl md:text-6xl font-black uppercase text-white tracking-tighter">
+                        Establish Connection
+                    </h1>
+                    <p class="mt-4 text-brand-skyblue">Open a direct channel to our project team.</p>
+
+                    <form class="mt-12 space-y-6">
+                        <div>
+                            <label for="name" class="contact-label">Your Name</label>
+                            <input type="text" id="name" name="name" class="contact-input" required>
+                        </div>
+                        <div>
+                            <label for="email" class="contact-label">Your Email</label>
+                            <input type="email" id="email" name="email" class="contact-input" required>
+                        </div>
+                        <div>
+                            <label for="message" class="contact-label">Your Message</label>
+                            <textarea id="message" name="message" rows="5" class="contact-input" required></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="w-full cta-button">Transmit Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="flex flex-col min-h-[50vh] lg:min-h-screen wow animate__animated animate__fadeInRight">
+                <div class="w-full flex-grow google-map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2999.2287384457672!2d-95.87659932423183!3d41.26035527131629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8793850d98741901%3A0xadcd3287154ec116!2s2030%202nd%20Ave%20%231%2C%20Council%20Bluffs%2C%20IA%2051501%2C%20USA!5e0!3m2!1sen!2sng!4v1749804291419!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="p-8 glass-card">
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <i class="fas fa-map-marker-alt text-2xl text-brand-cyan mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-white uppercase tracking-widest">Location</h4>
+                                <p>2030 2nd Ave #1, Council Bluffs, IA 51501</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <i class="fas fa-phone text-2xl text-brand-cyan mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-white uppercase tracking-widest">Phone</h4>
+                                <a href="tel:(703) 266-8454" class="hover:text-brand-cyan">(703) 266-8454</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <i class="fas fa-envelope text-2xl text-brand-cyan mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-white uppercase tracking-widest">Email</h4>
+                                <a href="mailto:admin@katsteelfabricinc.com" class="hover:text-brand-cyan">admin@katsteelfabricinc.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="script/script.js"></script>
+</body>
+</html>
